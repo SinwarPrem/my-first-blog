@@ -1,6 +1,10 @@
 from django.db import models
 from django.utils import timezone
+<<<<<<< HEAD
 from django.contrib.auth.models import BaseUserManager
+=======
+
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
 
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
@@ -17,6 +21,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+<<<<<<< HEAD
 
 class UserManager(BaseUserManager):
     def create_superuser(username,email,password):
@@ -31,3 +36,5 @@ class UserManager(BaseUserManager):
         user.save()
         return user 
 
+=======
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f

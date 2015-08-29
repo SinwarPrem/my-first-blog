@@ -4,9 +4,14 @@ h1 a {
 }
 .page-header {
     background-color: #ff9400;
+<<<<<<< HEAD
     margin-top: 0px;
     padding: 20px 20px 20px 40px;
     opacity: 1;
+=======
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -49,7 +54,11 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+<<<<<<< HEAD
 }
 body {
     background-image: url("whatsappbg.jpg");
 } 
+=======
+}
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f

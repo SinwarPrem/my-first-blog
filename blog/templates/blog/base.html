@@ -1,12 +1,17 @@
 {% load staticfiles %}
 <html>
     <head>
+<<<<<<< HEAD
         <title>Tagoretime</title>
+=======
+        <title>Django-boost up</title>
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static "css/blog.css" %}">
     </head>
+<<<<<<< HEAD
 <body>
     
     <div class="page-header">
@@ -22,12 +27,30 @@
     <div class="content">
         <div class="row">
             <div class="col-md-2"></div>
+=======
+    <body>
+     <div class="page-header">
+        {% if user.is_authenticated %}
+            <a href="{% url "post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        {% endif %}
+        <h1><a href="/">My First Django framework here</a></h1>
+        <a href="{% url "post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    </div>
+    <div class="content container">
+        <div class="row">
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
             <div class="col-md-8">
             {% block content %}
             {% endblock %}
             </div>
+<<<<<<< HEAD
             <div class="col-md-2"></div>
         </div>
     </div>
 </body>
+=======
+        </div>
+    </div>
+    </body>
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
 </html>

@@ -6,12 +6,18 @@
             <div class="date">
                 {{ post.published_date }}
             </div>
+<<<<<<< HEAD
         {% else %}
          <a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Publish</a>
         {% endif %}
          <a class="btn btn-default" href="{% url "post_edit" pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
          <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
         <h2>{{ post.title }}</h2>
+=======
+        {% endif %}
+         <a class="btn btn-default" href="{% url "post_edit" pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ post.title }}</h1>
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
         <p>{{ post.text|linebreaks }}</p>
     </div>
 {% endblock %}

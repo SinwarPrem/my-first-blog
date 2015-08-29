@@ -12,6 +12,7 @@ Class-based views
 Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
+<<<<<<< HEAD
     3.yha pr 1 mistake h 
 """
 from django.conf.urls import patterns, include, url
@@ -24,3 +25,13 @@ urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login'),
     url(r'', include('blog.urls')),
 )
+=======
+"""
+from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'',include('blog.urls')),
+]
+>>>>>>> feeb9c499d6f816489ba78329921857f70b6c57f
